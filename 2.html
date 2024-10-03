@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Details Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #4facfe, #00f2fe); /* Blue gradient background */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            animation: slideDown 1s ease-in-out;
+        }
+        .laptop-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 400px;
+            animation: zoomIn 1s ease;
+        }
+        .details {
+            background: #ffffff; /* White background for details */
+            color: #333; /* Dark text for readability */
+            padding: 30px;
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease;
+        }
+        .specs {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specs li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        h2 {
+            color: #e74c3c; /* Red for headings */
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            margin: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #2c3e50; /* Dark blue-grey for footer */
+            color: #fff;
+            margin-top: 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db; /* Light blue button */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gaming Laptop ABC123</h1>
+    <img src="C:\Users\acer\Desktop\lokesh html project\images\laptop.jpg" alt="Gaming Laptop ABC123" class="laptop-image">
+
+    <div class="details">
+        <h2>Specifications</h2>
+        <ul class="specs">
+            <li><strong>Display:</strong> 15.6-inch Full HD, 1920 x 1080 pixels</li>
+            <li><strong>Processor:</strong> Intel Core i7-11800H</li>
+            <li><strong>RAM:</strong> 16 GB DDR4</li>
+            <li><strong>Storage:</strong> 1 TB SSD</li>
+            <li><strong>Graphics:</strong> NVIDIA GeForce RTX 3060</li>
+            <li><strong>Battery:</strong> 4-cell, 70 WHr</li>
+            <li><strong>Operating System:</strong> Windows 11 Home</li>
+        </ul>
+
+        <h2>Features</h2>
+        <p>This gaming laptop features high-performance components for seamless gaming, a vibrant display for immersive visuals, and advanced cooling technology for prolonged usage.</p>
+
+        <h2>Price</h2>
+        <p><strong>$1,499</strong></p>
+    </div>
+    <footer>
+        <a href="javascript:history.back()" class="back-btn">Back</a>
+        <p>&copy; 2024 Lokesh's Website</p>
+    </footer>
+
+</body>
+</html>

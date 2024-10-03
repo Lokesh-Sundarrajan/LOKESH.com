@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Details Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #00c6ff, #0072ff); /* Blue gradient background */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #fff;
+            animation: slideDown 1s ease-in-out;
+        }
+        .phone-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 300px;
+            animation: zoomIn 1s ease;
+        }
+        .details {
+            background: #fff;
+            color: #333;
+            padding: 30px;
+            margin: 40px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 1s ease;
+        }
+        .specs {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specs li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            margin: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+            animation: fadeInUp 1.5s ease;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #c0392b;
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Smartphone Model XYZ</h1>
+    <img src="C:\Users\acer\Desktop\lokesh html project\images\phone.jpg" alt="Smartphone Model XYZ" class="phone-image">
+
+    <div class="details">
+        <h2>Specifications</h2>
+        <ul class="specs">
+            <li><strong>Display:</strong> 6.5-inch AMOLED, 1080 x 2400 pixels</li>
+            <li><strong>Processor:</strong> Octa-core 2.4 GHz</li>
+            <li><strong>RAM:</strong> 8 GB</li>
+            <li><strong>Storage:</strong> 128 GB (expandable via microSD)</li>
+            <li><strong>Camera:</strong> 64 MP (main), 12 MP (ultrawide), 5 MP (macro)</li>
+            <li><strong>Battery:</strong> 4500 mAh with fast charging</li>
+            <li><strong>Operating System:</strong> Android 12</li>
+        </ul>
+
+        <h2>Features</h2>
+        <p>This smartphone offers an exceptional photography experience, high performance for gaming, and a stunning display for streaming your favorite shows.</p>
+
+        <h2>Price</h2>
+        <p><strong>$699</strong></p>
+    </div>
+
+    <footer>
+        <a href="javascript:history.back()" class="back-btn">Back</a>
+        <p>&copy; 2024 Lokesh's Website</p>
+    </footer>
+
+</body>
+</html>

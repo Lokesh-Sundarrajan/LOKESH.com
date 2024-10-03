@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Details Page</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif; /* Changed font for a more elegant look */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f39c12, #e74c3c); /* Gradient background */
+            color: #333; /* Dark text for readability */
+            animation: fadeIn 1s ease-in-out;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff; /* White color for headings */
+            animation: slideDown 1s ease-in-out;
+        }
+        .coffee-image {
+            display: block;
+            margin: 20px auto;
+            max-width: 400px;
+            border-radius: 10px; /* Rounded corners for the image */
+            animation: zoomIn 1s ease;
+        }
+        .details {
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            margin: 20px auto; /* Center the details box */
+            width: 80%; /* Adjusted width */
+            animation: fadeInUp 1s ease;
+        }
+        h2 {
+            color: #c0392b; /* Dark red for subheadings */
+            margin-top: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            margin: 10px 0;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .specs {
+            list-style-type: none;
+            padding: 0;
+        }
+        .specs li {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #2c3e50; /* Dark blue-grey for footer */
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeInUp 1.5s ease;
+        }
+        .back-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2980b9; /* Blue button */
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #1f6393; /* Darker blue on hover */
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes zoomIn {
+            from { transform: scale(0.5); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Premium Arabica Coffee</h1>
+    <img src="C:\Users\acer\Desktop\lokesh html project\images\coffee.jpg" alt="Premium Arabica Coffee" class="coffee-image">
+
+    <div class="details">
+        <h2>Description</h2>
+        <p>Our Premium Arabica Coffee is sourced from the finest coffee farms, ensuring a rich and aromatic experience with every cup. This coffee offers a smooth taste with hints of chocolate and caramel.</p>
+
+        <h2>Specifications</h2>
+        <ul class="specs">
+            <li><strong>Origin:</strong> Colombia</li>
+            <li><strong>Roast Level:</strong> Medium</li>
+            <li><strong>Flavor Notes:</strong> Chocolate, Caramel, Nutty</li>
+            <li><strong>Processing Method:</strong> Washed</li>
+            <li><strong>Packaging:</strong> 250g resealable bag</li>
+        </ul>
+
+        <h2>Brewing Recommendations</h2>
+        <p>For the best flavor, brew with a pour-over or French press. Use filtered water and steep for 4-5 minutes for optimal extraction.</p>
+
+        <h2>Price</h2>
+        <p><strong>$14.99</strong></p>
+    </div>
+    <footer>
+        <a href="javascript:history.back()" class="back-btn">Back</a>
+        <p>&copy; 2024 Lokesh's Website</p>
+    </footer>
+
+</body>
+</html>

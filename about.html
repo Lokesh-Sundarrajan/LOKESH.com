@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #ff9a9e, #fad0c4); /* Gradient with soft pink and peach */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            transition: background 0.5s ease;
+        }
+        header {
+            background: #34495e; /* Dark slate for header */
+            color: #ecf0f1; /* Light text */
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+        .container {
+            width: 70%;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        h2, h3 {
+            color: #2c3e50; /* Dark navy for headers */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            background-color: #ff6f61; /* Coral for list items */
+            color: #fff;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        ul li:hover {
+            background-color: #e74c3c; /* Darker coral on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #34495e;
+            color: #ecf0f1;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in;
+        }
+        .back-btn {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #27ae60; /* Green for back button */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+            transform: scale(1.05);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Me</h1>
+</header>
+
+<div class="container">
+    <h2>Hello, I'm Lokesh!</h2>
+    <p>I'm currently working on a project using HTML, where I aim to create a personal website. Here, you will find information about me, my skills, and my interests.</p>
+    
+    <h3>My Skills</h3>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>Web Development</li>
+    </ul>
+
+    <h3>My Interests</h3>
+    <p>I enjoy coding, learning new technologies, and creating user-friendly web applications.</p>
+</div>
+
+<footer>
+    <a href="javascript:history.back()" class="back-btn">Back</a>
+    <p>&copy; 2024 Lokesh's Website</p>
+</footer>
+
+</body>
+</html>

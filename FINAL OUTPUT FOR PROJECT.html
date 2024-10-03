@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Page</title>
+<title>Call Icon with Material Icons</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #f6d365, #fda085); /* Soft gradient background */
+            color: #333;
+            transition: background 0.5s ease; /* Smooth transition on page load */
+        }
+        header {
+            background: #1abc9c; /* Teal for header */
+            color: #ecf0f1;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 1s ease-in; /* Fade-in animation */
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        nav a:hover {
+            color: #f39c12;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background: #fff; /* White background for the container */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: slideIn 1s ease-in-out; /* Slide-in animation */
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #1abc9c;
+            color: #ecf0f1;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 1.5s ease-in; /* Fade-in animation */
+        }
+        .contact-info {
+            margin: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center; /* Align items in the center */
+            gap: 20px; /* Space between items */
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #e74c3c;
+            margin-bottom: 15px;
+            animation: bounceIn 1s ease-in-out; /* Bounce-in animation for the title */
+        }
+        h2 {
+            font-size: 2em;
+            color: #34495e;
+            margin-bottom: 15px;
+            text-align: center;
+            transition: color 0.3s ease; /* Transition on hover */
+        }
+        h2:hover {
+            color: #e74c3c; /* Change color on hover */
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out; /* Animation on hover */
+        }
+        p:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ff7675; /* Vibrant pink for sections */
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        section:nth-child(even) {
+            background-color: #74b9ff; /* Blue for even sections */
+        }
+        section:hover {
+            background-color: #55efc4; /* Change background on hover */
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px; /* Rounded image corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out; /* Image hover animation */
+        }
+        img:hover {
+            transform: scale(1.1); /* Slight zoom effect on hover */
+        }
+        pre {
+            text-align: center;
+        }
+
+        /* Keyframe animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Lokesh's Website</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+        <section>
+            <h2>Lokesh’s HTML5 Interactive Website Project</h2>
+            <p>
+                I am Lokesh, and this is my <strong>HTML5 project</strong>, which showcases my skills in modern web development. This project presents a fully interactive, multi-page website designed using <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong> with real-time user tracking integration powered by Firebase.
+            </p>
+        </section>
+
+        <section>
+            <h2>1. Home Page: The Heart of the Website</h2>
+            <p>
+                The <strong>Home Page</strong> is the main gateway for users, featuring a clean, user-friendly design with a warm welcoming message.
+            </p>
+        </section>
+
+        <section>
+            <h2>2. About Page: Purpose and Vision</h2>
+            <p>
+                The <strong>About Page</strong> provides a detailed explanation of the website's purpose and the thought process behind its creation.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Contact Page: Easy Communication</h2>
+            <p>
+                The <strong>Contact Page</strong> includes a fully functional, interactive contact form for efficient communication.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Real-Time User Engagement</h2>
+            <p>
+                Using Firebase’s <strong>Realtime Database</strong>, the website tracks and displays the number of users currently active.
+            </p>
+        </section>
+
+        <section>
+            <h2>Conclusion: A Demonstration of HTML5 and Modern Web Technologies</h2>
+            <p>
+                This project represents a functional website built using <strong>HTML5</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>, with <strong>Firebase</strong> providing real-time capabilities.
+            </p>
+        </section>
+
+        <hr>
+        <img src="C:\Users\acer\Desktop\lokesh html project\images\workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+        <pre style="align:center;">
+        <map name="workmap">
+            <area shape="rect" coords="34,44,270,350" alt="Computer" href="2.html">
+            <area shape="rect" coords="290,172,333,250" alt="Phone" href="1.html">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="3.html">
+        </map>
+        </pre>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>This is where you can write a little about yourself or your business.</p>
+        </section>
+
+        <section id="services">
+            <h2>Services</h2>
+            <p>Detail the services you offer here.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                               <p>
+                    <a href="tel:9361899272">
+                        <span class="material-icons">phone</span> <!-- Material Icons Phone Icon -->
+                9361899272
+                    </a>
+                </p>
+                <p>
+                    <a href="mailto:lokeshsundarrajan6@gmail.com">
+                         <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="Gmail Logo" width="24" height="24"> <!-- Adjusted Gmail Logo Size -->
+
+                        
+                    </a>
+                </p>
+                <p>
+                    <a href="https://wa.me/9361899272?text=Hello%20Lokesh!%20I%20have%20a%20question." target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="20" height="20"> 
+                        
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/LokeshLoki" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30" height="30"> <!-- Facebook logo -->
+                    </a></p><p>
+                    <a href="https://www.instagram.com/_crazy_king._.06" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30" height="30"> <!-- Instagram logo -->
+                    </a>
+                </p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Lokesh's Website</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Cool gradient background */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff;
+            transition: background 0.5s ease;
+        }
+        header {
+            background: #1abc9c; /* Vibrant green for header */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1s ease-in;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #e67e22; /* Orange hover effect */
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #333;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+        h2, h3 {
+            color: #2c3e50; /* Dark slate for headings */
+            animation: fadeInUp 1s ease-in-out;
+        }
+        p {
+            line-height: 1.6;
+            animation: fadeInUp 1s ease-in-out;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #1abc9c;
+            color: #fff;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 1.5s ease-in;
+        }
+        .back-btn {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #e74c3c; /* Red for the back button */
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .back-btn:hover {
+            background-color: #c0392b; /* Darker red on hover */
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Services</h1>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Services Offered</h2>
+    <p>Here are the services I provide:</p>
+    
+    <h3>Web Development</h3>
+    <p>I create responsive and user-friendly websites tailored to your needs.</p>
+
+    <h3>Frontend Development</h3>
+    <p>Specializing in HTML, CSS, and JavaScript to bring your ideas to life on the web.</p>
+
+    <h3>Consultation</h3>
+    <p>Providing guidance and recommendations to improve your web presence.</p>
+    
+    <h3>Maintenance & Support</h3>
+    <p>Ongoing support to ensure your website runs smoothly and efficiently.</p>
+</div>
+
+<footer>
+    <a href="javascript:history.back()" class="back-btn">Back</a>
+    <p>&copy; 2024 Lokesh's Website</p>
+</footer>
+
+</body>
+</html>
